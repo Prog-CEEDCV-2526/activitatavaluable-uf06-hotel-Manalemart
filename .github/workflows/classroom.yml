@@ -18,8 +18,10 @@ jobs:
 
     - name: Run Maven tests
       run: mvn -B test --file pom.xml
+      continue-on-error: true
 
     - name: Nota
+      if: always()
       run: |
         echo "Estoy escribiendo desde el proyecto git"
         # Extraer totales desde Surefire
@@ -40,5 +42,5 @@ jobs:
         echo "## Resultados" >> $GITHUB_STEP_SUMMARY
         echo "- Test superats: $passed" >> $GITHUB_STEP_SUMMARY
         echo "- Test totals: $total" >> $GITHUB_STEP_SUMMARY
-        echo "- Nota sobre 10: **$nota**" >> $GITHUB_STEP_SUMMARY
+        echo "- Nota: **$nota**" >> $GITHUB_STEP_SUMMARY
         
