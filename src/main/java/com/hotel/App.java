@@ -324,7 +324,6 @@ public class App {
     } while (reserves.containsKey(codi));  // Repeteix si ja existeix
     
     return codi;
-}
     }
 
     /**
