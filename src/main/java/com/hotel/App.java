@@ -126,6 +126,10 @@ public class App {
         case 5:
             obtindreReserva();
             break;
+        case 6:
+                break;
+            default:
+                System.out.println("Opció no vàlida. Seleccione opció 1 a 6 del menú.");
        }
     }
 
