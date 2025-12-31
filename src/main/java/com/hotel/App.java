@@ -184,7 +184,6 @@ public class App {
     
     System.out.println("\nReserva creada amb èxit!");
     System.out.println("Codi de reserva: " + codi);
-}
         
     }
 
